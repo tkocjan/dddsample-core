@@ -13,10 +13,20 @@ parseFailureDirectory: /tmp/failed
 brokerUrl: "vm://localhost?broker.persistent=false&broker.useJmx=false"
 
 spring:
+#    dataSource:
+#        url: jdbc:hsqldb:mem:dddsample
+#        username: sa
+#        password: ""
+
     dataSource:
-        url: jdbc:hsqldb:mem:dddsample
-        username: sa
-        password: ""
+        url: jdbc:mysql://rocky:3306/dddsample
+        username: app
+        password: Password123=
+
+#    jpa:
+#        hibernate:
+#            ddl-auto: update
+#        database-platform: org.hibernate.dialect.MySQLDialect
 
 jdbc:
     datasource-proxy:

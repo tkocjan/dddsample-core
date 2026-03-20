@@ -50,7 +50,7 @@ public class SampleDataGenerator  {
     }
 
 
-    @PostConstruct
+//    @PostConstruct
     protected void generate() {
         TransactionTemplate tt = new TransactionTemplate(transactionManager);
 

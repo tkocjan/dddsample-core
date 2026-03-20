@@ -75,6 +75,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <commons-io.version>2.19.0</commons-io.version>
+        <mysql.connector.version>8.0.33</mysql.connector.version>
     </properties>
 
     <build>
@@ -134,6 +135,11 @@
         <dependency>
             <groupId>org.hsqldb</groupId>
             <artifactId>hsqldb</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql.connector.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.activemq</groupId>
